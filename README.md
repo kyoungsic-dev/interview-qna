@@ -96,7 +96,7 @@ _written by [김경식](https://github.com/kyoungsic-dev?tab=repositories/)_
 > 그 이유는 HTML4.0 표준부터 `<button>` 태그가 추가 되었기 때문이다.  
 > 둘의 기능은 동일하지만 활용성 면에서 차이가 존재한다.  
 > `<input>`은 열린 태그이기 때문에 자식 요소를 가질 수 없는 큰 단점을 가지고 있지만  
-> `<button>` 태그는 자식 요소를 가질 수 있고 CSS를 활용하여 [가상 요소](#7-가상요소와-가상클래스란) 꾸며주는 것이 가능하다.
+> `<button>` 태그는 자식 요소를 가질 수 있고 CSS를 활용하여 [가상요소](#7-가상요소pseudo-element-와-가상클래스pseudo-class란) 꾸며주는 것이 가능하다.
 
 ### 6. 취소선을 넣고싶을 때 어떤 태그를 사용하는가?
 
@@ -223,9 +223,9 @@ div {
 
 > CSS를 프로그래밍화하여 사용하는 것으로 CSS를 사용할 때 생기는 문제점과 번거로움을 보완한다.
 > Mixin, Nesting 등과 같은 기능으로 CSS 구조를 가독성있고 유지보수하기 좋게 한다.  
-> LESS, SASS등과 같은 전처리기가 있으며 해당 파일을 컴파일하여 CSS포맷으로 변환한다.
+> Less, Sass, Stylus 등과 같은 전처리기가 있으며 해당 파일을 컴파일하여 CSS포맷으로 변환한다.
 
-### 7. 가상요소와 가상클래스란?
+### 7. 가상요소(Pseudo element) 와 가상클래스(Pseudo class)란?
 
 > - 가상요소란 실제로 존재하지 않는 가상의 요소를 만들어 CSS로 제어하는 것을 말한다.  
 >   CSS2에서는 콜론(:)으로 사용할 수 있었지만 CSS3 이후로 이중콜론(::) 사용을 권장한다.  
@@ -255,37 +255,174 @@ div {
 
 ### 10. class와 id의 차이점은?
 
-### 11. rest.css 를 사용하는가? 사용한다면 왜 유용한가?
+> - class
+>   주어진 class 특성을 가진 모든 요소를 선택한다.
+> - id
+>   id 특성에 따라 요소를 선택한다. 문서 내에는 주어진 id를 가진 요소가 하나만 존재해야 한다.
+>   [적용 우선 순위](#1-css-적용-우선순위) : id > class
+
+### 11. rest.css를 사용하는가? 사용하는 이유는?
+
+> reset.css를 사용하는 가장 큰 이유는 크로스브라우징 때문인데 웹 브라우저마다 `margin` 이나 `padding` 등 각기 다른 default 스타일이 지정되어있다. 때문에 해당 값들을 초기화 함으로써 다양한 웹 브라우저에서도 동일한 스타일이 적용될 수 있도록 설정한다.
 
 ### 12. `float`이 어떻게 동작하는가?
 
+> `float` 속성은 주로 레이아웃을 구성할 때 블록 레벨요소를 가로 정렬하기 위해 사용되는 기법이다.
+> flexbox가 등장하기 이전에 주로 사용된 기법이었으나 지금은 사용하지 않는 추세이다.  
+> float 속성은 해당 요소를 다음 요소 위에 부유하게(떠있게) 한다. 여기서 부유한다는 의미는 해당 요소가 리본 레이아웃 흐름에서 벗어나 요소의 모서리가 페이지의 왼쪽이나 오른쪽에 이동하는 것이다.
+> |속성 값|설명|
+> |-|-|
+> |`none`|요소를 떠있게 하지 않는다. (기본값)|
+> |`right`|요소를 오른쪽으로 이동시킨다.|
+> |`left`|요소를 왼쪽으로 이동시킨다.|
+
 ### 13. `z-index`에 대해 설명하시오.
 
-### 14. BFC(Block Formatting Context)에 관해 설명하시오.
+> CSS `z-index` 속성은 위치 지정 요소와 그 자손 또는 하위 요소들의 Z축 순서를 지정한다.  
+> 더 큰 `z-index` 값을 가진 요소가 작은 값의 요소 위를 덮는다.
 
-### 15. 클리어링(Clearing) 기술에는 어떤 것들이 있으며, 어떨 때 사용하는 것이 적절한가?
+### 14. 블록 서식 맥락(Block Formatting Context)에 관해 설명하시오.
 
-### 16. Image Replacement를 사용해야 할 때, 선호하는 기술과 언제 사용하는지를 설명하시오.
+> BFC는 웹 페이지를 렌더링하는 시각적 CSS의 일부로서 블록 박스의 레이아웃이 발생하는 지점과 floating 요소의 상호작용 범위를 결정하는 범위이다.  
+> 쉽게 말해서 block 속성이 재부여되어 다르게 렌더링 되는 현상을 말한다.
+>
+> - 문서의 root 요소 (`<html>`)
+> - floating 요소 (`float`이 `none`이 아닐 때)
+> - 절대 위치를 지정한 요소 (`position`이 `absolute`, `fixed`)
+> - `display` 속성 값이 `inline-block` 일 때
+> - 표 칸(`display가` `table-cell`, HTML 표 칸의 기본값)
+> - 표 주석(`display가` `table-caption`, HTML 표 주석의 기본값).
+> - `display가` `table`, `table-row`, `table-row-group`, `table-header-group`, `table-footer-group`  
+>   (HTML 표에서, 각각 표 전체, 행, 본문, 헤더, 푸터의 기본값) 또는 `inline-table`인 요소가 암시적으로 생성한 무명 칸.
+> - `overflow`가 `visible`이 아닌 block 요소
+> - `display가` `flow-root`
+> - `contain`이 `layout`, `content`, `paint`
+> - 스스로 플렉스, 그리드, 테이블 컨테이너가 아닌 경우의 플렉스 항목 (`display가` `flex` 또는 `inline-flex`인 요소의 바로 아래 자식)
+> - 스스로 플렉스, 그리드, 테이블 컨테이너가 아닌 경우의 그리드 항목(`display가` `grid` 또는 `inline-grid`인 요소의 바로 아래 자식)
 
-### 17. 기능이 제약된 브라우저를 위해서 어떤 방식으로 사이트를 만드는가?
+### 15. IR(Image Replacement) 기법이란 무엇이고 어떤 것이 있는가?
 
-### 18. 시각적으로 보이지 않고 스크린리더에서만 가능하게 하는 방법은?
+> IR 기법은 이미지를 볼 수 없는 사용자들에게 적절한 대체 텍스트를 제공하는 것으로 이는 [웹 접근성](#웹저) 준수 뿐만아니라 효과적인 [SEO](#✔-seosearch-engine-optimize--웹사이트가-검색-결과에-더-잘-보이도록-최적화하는-과정)를 위해 요구되는 기법이다.  
+> img태그에는 `alt` 속성으로 표현하지만 CSS `background-image`로 작업된 이미지 요소에 대체 텍스트를 추가해주는 방법은 다음과 같다.
+>
+> - Phark Method
+>   - 의미 있는 이미지의 대체 텍스트를 제공하는 경우
+>   - 이미지로 대체할 요소에 배경이미지를 설정하고
+>     > ```css
+>     > .ir_pm {
+>     >   display: block;
+>     >   overflow: hidden;
+>     >   font-size: 0;
+>     >   line-height: 0;
+>     >   text-indent: -9999px;
+>     > }
+>     > ```
+> - WA IR
+>   - 의미있는 이미지의 대체 텍스트로 이미지가 없어도 대체 텍스트를 보여주고자 할 때
+>   - 이미지로 대체 할 엘리먼트에 배경이미지를 설정하고 글자는 span 태그로 감싼 후 z-index:-1을 이용하여 화면에 보이지 않게 처리
+>     > ```css
+>     > .ir_wa {
+>     >   display: block;
+>     >   overflow: hidden;
+>     >   position: relative;
+>     >   z-index: -1;
+>     >   width: 100%;
+>     >   height: 100%;
+>     > }
+>     > ```
+> - Screen Out
+>   - 대체 텍스트가 아닌 접근성만을 위한 숨김 텍스트를 제공할 때
+>     > ```css
+>     > .ir_so {
+>     >   overflow: hidden;
+>     >   position: absolute;
+>     >   width: 0;
+>     >   height: 0;
+>     >   line-height: 0;
+>     >   text-indent: -999px;
+>     > }
+>     > ```
 
-### 19. 그리드 시스템(Grid system)을 사용한 적이 있다면 어떤 것을 선호하는가?
+### 16. 시각적으로 보이지 않고 스크린리더에서만 가능하게 하는 방법은?
 
-### 20. CSS Selector가 어떠한 원리로 동작하는지 설명하시오.
+> - `display: none` 영역이 사라지며 콘텐츠가 보이지 않는다.
+> - `visibility: hidden` 영역은 남아 있으나 콘텐츠는 보이지 않는다.
+> - block 요소에 `width:0; height: 0;` `overflow: hidden`
 
-### 21. pseudo-elements에 관해서 설명하고 어디에서 사용되는지 설명하시오.
+### 17. CSS Selector가 어떠한 원리로 동작하는지 설명하시오.
 
-### 22. box model에 관해 설명하고 브라우저에서 어떻게 동작하는지 설명하시오.
+> - 선택자(Selector) 가장 마지막에 있는 선택자를 Key 선택자라고 하는데 스타일 엔진은 이 Key 선택자부터 왼쪽으로 이동하면서 ID, Class, Tag, Universal 규칙에 부합하는 검사하면서 파싱을 진행한다.
 
-### 23. `box-sizing: border-box;`은 무엇이고 사용했을때 이점은 무엇인가?
+### 18. 효율적인 CSS를 작성하기 위한 비법(gotchas)은 어떤게 있는가?
 
-### 24. `inline`과 `inline-block`의 차이점은 무엇인가?
+> - 선택자는 상위 선택자를 포함하여 3개 이상 작성하지 않는다.
+> - 전체 선택자(\*)를 사용하지 않는다.
+> - 정규 표현식`.regex-selector[type^="value"]: {...}`과  
+>   유사한 attribute 선택자(`[type="text"]: {...}`❌ `input[type="text"]: {...}`⭕) 사용을 지양한다.
+> - ID 선택자를 사용하지 않는다.
+>   - ID는 하나의 HTML파일에 유일하게 존재하는 값이다. ID 선택자를 사용한다는 것은 스타일을 한 요소에만 적용한다는 것인데 이러한 구조는 스타일 규칙의 재사용이 불가능하게 만들어 CSS 파일 사이즈를 크게 만들고 유지보수와 확장성에 불편함을 가져오게 된다.
+> - Class 규칙에 불필요한 태그를 조합하여 사용하지 않는다.
+> - Tag 선택자 규칙에 상위 선택자로 태그를 포함하지 않는다.
+>   - HTML 문서 수정에 따른 CSS 파일 수정을 최소화 하기 위해 태그 규칙에 상위 선택자로 Tag 선택자를 사용하지 않는다.
 
-### 25. CSS에서 'C’는 Cascading을 의미하는데 Cascading에 관해서 설명하시오.
+### 19. `position: absolute` 와 `transform: translate()`의 차이는?
 
-### 26. CSS 방법론에는 어떤 것이 있고 사용해본 경험이 있는가?
+> `position: absolute`와 `transform: translate()`는 비슷해보이나 근본적인 목적이 다르기 때문에 구별하여 사용해야 한다.
+>
+> - 사용목적
+>   - `position: absolute`는 특정 위치에 가져다 놓는 포지셔닝에 특화되어 있다.
+>   - `transform: translate()`는 애니메이션에 목적을 두고 있다.
+> - 영향
+>   - `position: absolute`는 주변 요소에 영향을미친다.
+>   - `transform: translate()`는 좌표 공간을 변형시켜 다른 형제, 부모요소에 영향을 미치지 않는다.
+> - 성능
+>   - `position: absolute` 는 레아이웃을 계산하기 위해 CPU 연산처리가 동반되고 연산 후에는 reflow와 repaint가 발생하여 속도 저하를 불러올 수 있다.
+>   - `transform: translate()`같은 CSS3 애니메이션 함수는 GPU로 처리하기 때문에 성능면에서 우위에 있다.
+
+### 20. `position` 속성 값엔 어떤 것들이 있고 차이는?
+
+> - `static` : `position`속성의 기본 값으로 다른 요소와의 관계에 의해 자동으로 배치되며 `top, right, bottom, left` offset 값을 지정할 수 없다.
+> - `relative` : 기존 위치를 기준으로 좌표를 지정한다. 기존 위치는 `position: static` 상태일 때를 기준으로 한다.
+> - `absolute` : 문서의 흐름과 상관없이 절대 좌표와 함께 위치를 지정할 수 있다. 해당 속성은 기준점이 중요한데 상위 요소 중 속성이 `static`이 아닌 것 중 가장 가까운 요소를 기준으로 한다.
+> - `fixed` : `absolute` 속성과 비슷하지만 좌표의 기준점은 viewport의 좌측 상단 꼭지점으로 한다.
+> - `sticky` : 해당 속성은 기준점을 넘지 않을 때는 `relative` 처럼 동작하지만 기준점을 벗어나면 `fixed`처럼 동작하며 scroll이 계속 되면 마지막 위치에서 멈추게 된다. 일반적인 상황에서 `sticky` 속성의 기준점은 부모 요소가 된다.
+
+### 21. Box Model에 관해 설명하고 브라우저에서 어떻게 동작하는지 설명하시오.
+
+> Box Model이란 HTML 요소가 웹 페이지에서 차지하는 공간을 정의한 모델이다.  
+> 각 HTML 요소들은 자신만의 영역을 가지며 다시 여러개의 작은 영역으로 나뉜다.
+>
+> ![Box Model](images/box_model.png)
+>
+> - Content 영역
+>   콘텐츠 경계가 감싼 영역으로 글이나 이미지, 비디오 등 요소의 실재 내용을 포함하는 영역으로 `width, height` 속성을 갖는다.
+> - Padding 영역
+>   padding edge가 감싼 영역으로 콘텐츠 영역을 요소의 안쪽 여백까지 포함하는 크기로 확장이 가능하다. 요소에 적용된 배경의 색과 이미지는 패딩 영역까지 적용된다.
+> - Border 영역
+>   테두리 영역으로 border 속성 값은 테두리의 두께를 의미한다.
+> - Margin 영역
+>   테두리 바깥에 위치하는 요소의 외부 여백 영역
+
+### 22. `box-sizing: border-box;`은 무엇이고 사용했을때 이점은 무엇인가?
+
+> `box-sizing` 속성의 기본값은 `content-box`이다. `content-box`는 `width, heighht` 속성의 대상이 content 영역임을 의미한다.  
+> 반면 `border-box` 속성은 `margin` 속성을 제외한 Box Model 전체를 `width, height` 속성의 대상 영역으로 계산함으로 `content-box`보다 직관적이라고 할 수 있다.
+
+### 23. `inline`과 `inline-block`의 차이점은 무엇인가?
+
+> - `inline` > `block`과 달리 줄바꿈이 일어나지 않고 content크기 만큼의 `width, height`를 가지고 있다. `width, height` 값을 지정할 수 없다.
+> - `inline-block` `inline`과 동일하지만 `width, height` 값을 지정할 수 있다.
+
+### 24. CSS에서 'C’는 Cascading을 의미하는데 Cascading에 관해서 설명하시오.
+
+> Cascading은 '위에서 아래로 상속, 종속하는' 의미이다. 따라서 적용된 여러 스타일 중에서 어떤 스타일로 브라우저에 렌더링 할 지 결정하는 원리로 이해할 수 있다.  
+> ⚙ [CSS 적용 우선순위](#1-css-적용-우선순위)
+
+### 25. CSS 방법론이란 무엇이고 어떤 것들이 있는가?
+
+> CSS 방법론이란 프로젝트의 규모가 커지는 만큼 CSS도 그만큼 증가하고 복잡해진다.  
+> 불필요한 작업을 최소화 하고 작성된 코드를 쉽게 파악하고 유지보수와 확장성까지 고려하기 위한 일관적인 작성 규칙을 말한다.  
+> 대표적인 방법론으로 OOCSS, SMACSS, BEM 등이 있다.
 
 ---
 
