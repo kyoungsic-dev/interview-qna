@@ -265,18 +265,18 @@ div {
 
 > reset.css를 사용하는 가장 큰 이유는 크로스브라우징 때문인데 웹 브라우저마다 `margin` 이나 `padding` 등 각기 다른 default 스타일이 지정되어있다. 때문에 해당 값들을 초기화 함으로써 다양한 웹 브라우저에서도 동일한 스타일이 적용될 수 있도록 설정한다.
 
-### 12. `float`이 어떻게 동작하는가?
+### 12. float이 어떻게 동작하는가?
 
 > `float` 속성은 주로 레이아웃을 구성할 때 블록 레벨요소를 가로 정렬하기 위해 사용되는 기법이다.
 > flexbox가 등장하기 이전에 주로 사용된 기법이었으나 지금은 사용하지 않는 추세이다.  
 > float 속성은 해당 요소를 다음 요소 위에 부유하게(떠있게) 한다. 여기서 부유한다는 의미는 해당 요소가 리본 레이아웃 흐름에서 벗어나 요소의 모서리가 페이지의 왼쪽이나 오른쪽에 이동하는 것이다.
 > |속성 값|설명|
 > |-|-|
-> |`none`|요소를 떠있게 하지 않는다. (기본값)|
-> |`right`|요소를 오른쪽으로 이동시킨다.|
-> |`left`|요소를 왼쪽으로 이동시킨다.|
+> |none|요소를 떠있게 하지 않는다. (기본값)|
+> |right|요소를 오른쪽으로 이동시킨다.|
+> |left|요소를 왼쪽으로 이동시킨다.|
 
-### 13. `z-index`에 대해 설명하시오.
+### 13. z-index에 대해 설명하시오.
 
 > CSS `z-index` 속성은 위치 지정 요소와 그 자손 또는 하위 요소들의 Z축 순서를 지정한다.  
 > 더 큰 `z-index` 값을 가진 요소가 작은 값의 요소 위를 덮는다.
@@ -365,7 +365,7 @@ div {
 > - Tag 선택자 규칙에 상위 선택자로 태그를 포함하지 않는다.
 >   - HTML 문서 수정에 따른 CSS 파일 수정을 최소화 하기 위해 태그 규칙에 상위 선택자로 Tag 선택자를 사용하지 않는다.
 
-### 19. `position: absolute` 와 `transform: translate()`의 차이는?
+### 19. position: absolute 와 transform: translate()의 차이는?
 
 > `position: absolute`와 `transform: translate()`는 비슷해보이나 근본적인 목적이 다르기 때문에 구별하여 사용해야 한다.
 >
@@ -379,7 +379,7 @@ div {
 >   - `position: absolute` 는 레아이웃을 계산하기 위해 CPU 연산처리가 동반되고 연산 후에는 reflow와 repaint가 발생하여 속도 저하를 불러올 수 있다.
 >   - `transform: translate()`같은 CSS3 애니메이션 함수는 GPU로 처리하기 때문에 성능면에서 우위에 있다.
 
-### 20. `position` 속성 값엔 어떤 것들이 있고 차이는?
+### 20. CSS position 속성 값엔 어떤 것들이 있고 차이는?
 
 > - `static` : `position`속성의 기본 값으로 다른 요소와의 관계에 의해 자동으로 배치되며 `top, right, bottom, left` offset 값을 지정할 수 없다.
 > - `relative` : 기존 위치를 기준으로 좌표를 지정한다. 기존 위치는 `position: static` 상태일 때를 기준으로 한다.
@@ -403,12 +403,12 @@ div {
 > - Margin 영역
 >   테두리 바깥에 위치하는 요소의 외부 여백 영역
 
-### 22. `box-sizing: border-box;`은 무엇이고 사용했을때 이점은 무엇인가?
+### 22. CSS box-sizing: border-box에 대해 설명하시오.
 
 > `box-sizing` 속성의 기본값은 `content-box`이다. `content-box`는 `width, heighht` 속성의 대상이 content 영역임을 의미한다.  
 > 반면 `border-box` 속성은 `margin` 속성을 제외한 Box Model 전체를 `width, height` 속성의 대상 영역으로 계산함으로 `content-box`보다 직관적이라고 할 수 있다.
 
-### 23. `inline`과 `inline-block`의 차이점은 무엇인가?
+### 23. CSS display 속성 inline과 inline-block의 차이점은?
 
 > - `inline` > `block`과 달리 줄바꿈이 일어나지 않고 content크기 만큼의 `width, height`를 가지고 있다. `width, height` 값을 지정할 수 없다.
 > - `inline-block` `inline`과 동일하지만 `width, height` 값을 지정할 수 있다.
@@ -545,15 +545,15 @@ console.log(add3(1)); // 4
 
 ### 9. event delegation에 관해 설명하시오.
 
-### 10. `this`는 Javascript에서 어떻게 작동하는지 설명허시오.
+### 10. this는 Javascript에서 어떻게 작동하는지 설명허시오.
 
-### 11. `prototype` 기반 상속은 어떻게 하는지 설명하시오.
+### 11. prototype 기반 상속은 어떻게 하는지 설명하시오.
 
 ### 12. AMD와 CommonJS는 무엇이고, 이것들에 대해 어떻게 생각하는가?
 
 ### 13. IIFE로 만들기 위해서는 어떻게 해야 하는가?
 
-### 14. `null`과 `undefined` 그리고 `undeclared`의 차이점은?
+### 14. null과 undefined 그리고 undeclared의 차이점은?
 
 ### 15. 익명함수(anonymous functions)는 주로 어떤 상황에서 사용하는가?
 
@@ -579,13 +579,13 @@ console.log(add3(1)); // 4
 
 ### 26. 삼항식(Ternary statement)을 사용하는 이유는 무엇이고, 그것을 표현하기 위한 연산자 단어는 무엇인가?
 
-### 27. `use strict;`은 무엇이고, 사용했을 때 장단점에 관해서 설명하시오.
+### 27. use strict;은 무엇이고, 사용했을 때 장단점에 관해서 설명하시오.
 
 ### 28. 전역 Scope를 사용했을 때 장단점은?
 
 ### 29. SPA에서 SEO에 유리하도록 만들기 위한 방법은?
 
-### 30. `callback` 대비 `promise`의 장/단점은 무엇인가?
+### 30. callback 대비 promise의 장/단점은 무엇인가?
 
 ### 31. JavaScript의 작동방식의 장/단점은 무엇인가?
 
