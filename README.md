@@ -15,7 +15,7 @@ HTML, CSS, Javascript, 기타 용어 및 기술 파트로 구성되어 있으며
 - [기타 용어 및 기술](#기타-용어-및-기술)
 - [프로젝트 관련 예상 질문](#프로젝트-관련-예상-질문)
 
-_written by [김경식](https://github.com/kyoungsic-dev?tab=repositories/)_
+_written by [김경식](https://github.com/kyoungsic-dev/)_
 
 ---
 
@@ -395,7 +395,7 @@ div {
 > ![Box Model](images/box_model.png)
 >
 > - Content 영역
->   콘텐츠 경계가 감싼 영역으로 글이나 이미지, 비디오 등 요소의 실재 내용을 포함하는 영역으로 `width, height` 속성을 갖는다.
+>   콘텐츠 경계가 감싼 영역으로 글이나 이미지, 비디오 등 요소의 실제 내용을 포함하는 영역으로 `width, height` 속성을 갖는다.
 > - Padding 영역
 >   padding edge가 감싼 영역으로 콘텐츠 영역을 요소의 안쪽 여백까지 포함하는 크기로 확장이 가능하다. 요소에 적용된 배경의 색과 이미지는 패딩 영역까지 적용된다.
 > - Border 영역
