@@ -100,15 +100,15 @@ _written by [김경식](https://github.com/kyoungsic-dev/)_
 
 ### 6. 취소선을 넣을 때 사용하는 태그는 무엇인가?
 
-```html
-<del>취소선 태그</del>
-```
+> ```html
+> <del>취소선 태그</del>
+> ```
 
 ### 7. 밑줄을 넣을 때 사용하는 태그는 무엇인가?
 
-```html
-<ins>밑줄 태그</ins>
-```
+> ```html
+> <ins>밑줄 태그</ins>
+> ```
 
 ### 8. 오픈그래프(OG)에 대해 설명하시오.
 
@@ -254,16 +254,16 @@ _written by [김경식](https://github.com/kyoungsic-dev/)_
 
 ### 3. CSS로 세모를 만드는 방법은 무엇인가?
 
-```css
-div {
-  width: 0;
-  height: 0;
-  border-bottom: 50px solid transparent;
-  border-top: 50px solid transparent;
-  border-left: 50px solid red;
-  border-right: 50px solid transparent;
-}
-```
+> ```css
+> div {
+>   width: 0;
+>   height: 0;
+>   border-bottom: 50px solid transparent;
+>   border-top: 50px solid transparent;
+>   border-left: 50px solid red;
+>   border-right: 50px solid transparent;
+> }
+> ```
 
 ### 4. CSS Sprite에 대해 설명하시오.
 
