@@ -903,13 +903,6 @@ console.log(add3(1)); // 4
 
 </details>
 
-### prototype 기반 상속에 대해 설명하시오.
-
-<details>
-  <summary>답변 확인</summary>
-
-</details>
-
 ### 즉시 실행 함수 표현(IIFE)으로 만들기 위해서는 어떻게 해야 하는가?
 
 <details>
@@ -984,38 +977,48 @@ console.log(add3(1)); // 4
 
 </details>
 
-### .call과 .apply의 차이점은 무엇인가?
-
-<details>
-  <summary>답변 확인</summary>
-
-</details>
-
-### Function.prototype.bind에 대해 설명하시오.
-
-<details>
-  <summary>답변 확인</summary>
-
-</details>
-
 ### document.write()는 언제 사용하는가?
 
 <details>
   <summary>답변 확인</summary>
 
+> `document.write()` 메서드는 문서가 로드 될 때 문서에 괄호안의 내용을 출력해주는 출력문이다.  
+> 동기적으로 그려지는 웹 페이지에서 사용시 문제가 되지 않지만 이벤트 핸들러로 조작하거나 비동기 호출로 해당 구문을 사용할 경우 기존 HTML 문서의 모든 내용을 삭제하게 된다. 즉, 로드된 이후에 사용할 경우 문서의 내용을 초기화 시키므로 사용 시 유의하여야 한다.
+
 </details>
 
-### innerText와 contentText의 차이는 무엇인가?
+### innerText(), textContent(), innerHTML() 간의 차이는 무엇인가?
 
 <details>
   <summary>답변 확인</summary>
 
+> 세 메서드 모두 노드의 텍스트 값을 읽어오고 설정할 수 있다는 점이 비슷하지만 조금씩 차이가 있으므로 잘 알고 사용해야 한다.
+>
+> - innerHTML
+>   Element 속성으로 Element 내에 포함 된 HTML 또는 XML 마크업을 가져오거나 태그와 함께 입력하여 내용을 직접 설정할 수 있다. 즉 HTML 내용을 Javascript 코드에서 새 내용으로 변경할 수 있는 것이다.
+> - innerText
+>   Element 속성으로 Element 내에서 사용자에게 보여지는 text 값들을 가져오거나 설정할 수 있다. `innerHTML`과 달리 태그와 함께 사용할 수 없다.
+> - textContent
+>   Node 속성으로 사용자에게 보여지는 text 값만 읽어오는 innerText와 다르게 `script`나 `style` 태그에 상관없이 해당 노드가 가지고 있는 텍스트 값을 모두 읽어 온다.
+
 </details>
 
-### JSON이 동작원리에 대해 설명하시오.
+### JSON(JavaScript Object Notation)에 대해 설명하시오.
 
 <details>
   <summary>답변 확인</summary>
+
+> JSON은 Javasript의 오브젝트를 표기하기 위한 표기법이다.  
+> JSON은 웹과 소프트웨어 사이에서 데이터를 교환하기 위해 데이터 객체를 속성, 값 형태 `{데이터 이름 : 값}`로 표현한다. Javascript를 기반으로 개발되었지만 언어로부터 독립적이기 때문에 C, C++, Java, Python, PHP와 같은 다양한 언어에서 사용하고 있다. Javascript 객체 표기법과 유사하지만 작성 시 몇가지 주의 사항이 있는데 데이터 이름은 반드시 문자열 형식이어야 하며 쌍 따옴표를 사용한다. 값으로는 숫자, 문자열, Boolean, 객체, 배열, null을 입력할 수 있다.
+>
+> ```json
+> "prettier.jsxSingleQuote": true,
+> "prettier.singleQuote": true,
+> "prettier.jsxBracketSameLine": true,
+> "prettier.printWidth": 120,
+> "prettier.quoteProps": "consistent",
+> "prettier.arrowParens": "always",
+> ```
 
 </details>
 
@@ -1030,10 +1033,19 @@ console.log(add3(1)); // 4
 
 </details>
 
-### document load event와 DOMContentLoaded event의 차이점은 무엇인가?
+### 이벤트 핸들러 load와 DOMContentLoaded의 차이점은 무엇인가?
 
 <details>
   <summary>답변 확인</summary>
+
+> - `DOMContentLoaded` 이벤트는 브라우저가 HTMl 문서를 읽고 [DOM](#📝-domdocument-object-model--문서-객체-모델-html-문서에-접근하기-위한-일종의-인터페이스이다) 트리를 완성하는 즉시 실행된다.  
+>   이미지나 CSS등의 리소스를 기다리지 않으므로 호출 속도가 빠르다. DOM이 준비됐을 때 원하는 노드를 찾아 핸들러를 등록해 인터페이스를 초기화할 때 사용한다. `DOMContentLoaded`은 `document` 객체에서 발생하므로 `addEventListener`로 사용한다.
+> - load
+>   브라우저가 HTML 문서를 전부 읽고 DOM 트리를 만드는게 완성됐을 뿐만 아니라 이미지와 CSS 같은 리소르를 모두 로드했을 때 이벤트가 발생한다. `load`는 이미지 사이즈를 알고 싶을 때 등 이벤트가 리소스와 관련될 때 사용한다. `window` 객체에서 실행되므로 `load` 이벤트는 `onload` 프로퍼티를 통해서도 사용할 수 있다.
+> - beforeunload
+>   사용자가 페이지를 떠나기 전에 `window` 객체에서 발생한다. 변경되지 않은 사항들을 저장했는지 확인 시킬 때 사용할 수 있다.
+> - unload
+>   사용자가 최종적으로 사이트를 떠날 때 `window` 객체에서 발생한다. 사용자 분석 정보를 담은 통계자료를 전송하고자 할 때 사용할 수 있다.
 
 </details>
 
@@ -1054,6 +1066,10 @@ console.log(add3(1)); // 4
 
 <details>
   <summary>답변 확인</summary>
+
+> 동일 출처 정책은 어떤 출처에서 불러온 문서나 스크립트가 다른 출처에서 가져온 리소스와 상호작용하는 것을 제한하는 중요한 보안방식이다. 동일 출처 정책은 잠재적으로 해로울 수 있는 문서를 분리함으로서 공격받을 수 있는 경로를 줄여준다.  
+> 즉, 동일 출처 정책은 웹 브라우저 보안을 위해 프로토콜, 호스트, 포트가 동일한 서버로만 AJAX 요청을 주고 받을 수 있도록 한 정책이다.
+> 동일 출처 정책을 해결하기 위한 방법으로 [CORS](#corscross-origin-resource-sharing에-대해-설명하시오)가 있다.
 
 </details>
 
@@ -1103,12 +1119,24 @@ console.log(add3(1)); // 4
 <details>
   <summary>답변 확인</summary>
 
+> - [SSR](#ssrserver-side-rendering과-csrclient-side-rendering에-대해-설명하시오) 방식으로 구현
+> - 사전 렌더링(Pre-Rendering)
+>   사전 렌더링은 서버에서 실제 사람인지 검색 봇인지를 판단해서 검색 봇일 경우에 페이지를 읽을 수 있도록 렌더링 된 페이지를 전달해주는 것이다.
+> - History API
+>   History API는 [SPA](#spasingle-page-application에-대해-설명하시오) 방식의 웹 사이트에서 주소가 바뀌지 않는 문제를 해결하기 위해 싱글페이지 임에도 주소를 부여하는 기능의 API이다. 이를 통해 정적인 URL 경로를 설정할 수 있어 SEO 성능을 향상 시킬 수 있다.
+
 </details>
 
 ### Callback 대비 Promise의 장/단점은 무엇인가?
 
 <details>
   <summary>답변 확인</summary>
+
+> `Promise`는 Javascript에서 비동기 호출을 간편하게 처리해주는 객체이다.  
+> 주로 서버에서 받아온 데이터를 화면에 표시할 때 사용된다.  
+> 일반적으로 웹 어플리케이션을 구현할 때 서버에서 데이터를 요청하고 받아오기 위해 API를 사용하는데 API가 실행되면 서버에데가 데이터를 보내달라는 요청을 보내고 여기서 데이터를 받아오기 전에 화면에 데이터를 출력하려고 하면 빈 화면이 뜨게 되는데 이를 해결하기 위해 `Promise`를 사용한다.  
+> `Callback` 함수는 함수의 매개변수인 함수로 주로 비동기 처리에서 동기 처리를 할때 사용하는 패턴이다. 이 패턴의 단점은 `Callback` 함수의 중첩이 많아질수록 코드 가독성이 심하게 나빠진다는 단점이 있다.(Callback hell)
+> `Promise`는 비동기 처리만을 위해 만들어졌기 때문에 `resolve`, `reject`, `then`과 같은 함수들이 잘 정의되어 있어 복잡한 로직에도 코드 가독성이 뛰어나며 `Promise` 객체에 비동기로 처리된 결과 값이 저장되어 원하는 때에 사용할 수 있는 장점이 있다.
 
 </details>
 
@@ -1130,27 +1158,6 @@ console.log(add3(1)); // 4
 >   - 함수 표현식은 호이스팅이 적용되지 않는다.
 >   - 일반적으로 함수 선언식과 함수 표현식은 함께 사용 가능하지만 함수 표현식은 함수의 이름이 필요하지 않기 때문에 가독성이 더 높은 장점이 있다.
 >     또한 함수 표현식은 [클로처(Closure)](#클로저closure에-대해-설명하시오), 인자 전달, [IIFE(즉시 실행 함수 표현)](#즉시-실행-함수-표현iife으로-만들기-위해서는-어떻게-해야-하는가)를 사용할 수 있는 장점이 있다.
-
-</details>
-
-### JavaScript를 디버깅할 때 사용하는 도구가 있으면 설명하시오.
-
-<details>
-  <summary>답변 확인</summary>
-
-</details>
-
-### Mutable object와 Immutable object에 대해 설명하시오.
-
-<details>
-  <summary>답변 확인</summary>
-
-</details>
-
-### JavaScript에서 Immutable 객체의 예를 드시오.
-
-<details>
-  <summary>답변 확인</summary>
 
 </details>
 
@@ -1222,6 +1229,27 @@ console.log(add3(1)); // 4
 >   - 브라우저 호환성이 뛰어나다. 렌더링 엔진의 경우 브라우저 마다 달라 구현이 안되는 경우들이 있는데 JS 애니메이션은 호환성에 구애받지 않는다.
 >   - GPU를 통한 하드웨어 가속을 제어할 수 있다. CSS 애니메이션의 경우 특정 속성에 의한 GPU가속이 됨으로>서 - 저사양의 컴퓨팅인 경우에 성능 하락을 발생시킬 수 있으나 이를 막을수 있다.
 >     요소의 스타일이 변하는 순간마다 제어가 가능하기 때문에 애니메이션의 세밀한 구성이 가능해진다.>
+
+</details>
+
+### prototype 기반 상속에 대해 설명하시오.
+
+<details>
+  <summary>답변 확인</summary>
+
+</details>
+
+### .call, .apply, .bind()에 대해 설명하시오.
+
+<details>
+  <summary>답변 확인</summary>
+
+</details>
+
+### Function.prototype.bind에 대해 설명하시오.
+
+<details>
+  <summary>답변 확인</summary>
 
 </details>
 
@@ -1345,7 +1373,7 @@ console.log(add3(1)); // 4
 
 </details>
 
-### SPA(Single Page Application)에 대해 설명허시오.
+### SPA(Single Page Application)에 대해 설명하시오.
 
 <details>
   <summary>답변 확인</summary>
