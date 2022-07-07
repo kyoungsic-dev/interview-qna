@@ -15,8 +15,6 @@ HTML, CSS, Javascript, 기타 용어 및 기술 파트로 구성되어 있으며
 - [기타 용어 및 기술](#기타-용어-및-기술)
 - [프로젝트 관련 예상 질문](#프로젝트-관련-예상-질문)
 
-_written by [김경식](https://github.com/kyoungsic-dev/)_
-
 ---
 
 ## ✨HTML
@@ -24,7 +22,7 @@ _written by [김경식](https://github.com/kyoungsic-dev/)_
 ### 1. !Doctype에 대해 설명하시오.
 
 <details>
-  <summary>✅ 답변 확인</summary>
+  <summary>답변 확인</summary>
   <br />
 
 > 웹 브라우저는 [쿼크모드(Quirks mode)](#-쿼크모드quirks-mode--오래된-브라우저의-행동-모방하여-렌더링)와 [표준모드(Standard mode)](#-표준모드standard-mode--w3c-표준에-따라-렌더링) 두 가지 렌더링 모드를 가지고 있다.  
@@ -39,7 +37,7 @@ _written by [김경식](https://github.com/kyoungsic-dev/)_
 ### 2. meta태그에 대해 설명하시오.
 
 <details>
-  <summary>✅ 답변 확인</summary>
+  <summary>답변 확인</summary>
   <br />
 
 > meta태그란 문서를 설명하는 태그를 일컫는다. 해당 문서가 어떤 내용을 담고 있고 문서의 핵심키워드는 무엇이며 누가 만들었는지, 문자셋은 어떤 것을 사용하는지 등의 다양한 정보를 담고 있는 태그이다.
@@ -56,7 +54,7 @@ _written by [김경식](https://github.com/kyoungsic-dev/)_
 ### 3. 시맨틱태그에 대해 설명하시오.
 
 <details>
-  <summary>✅ 답변 확인</summary>
+  <summary>답변 확인</summary>
   <br />
 
 > HTML 문서의 구조를 설계하는 데에 있어 태그에 의미를 부여하여 문서의 구조 파악이 용이하도록 만든 태그를 말한다.
@@ -99,7 +97,7 @@ _written by [김경식](https://github.com/kyoungsic-dev/)_
 ### 4. 같은 기능을 하는 태그 간 차이에 대해 설명하시오.
 
 <details>
-  <summary>✅ 답변 확인</summary>
+  <summary>답변 확인</summary>
   <br />
 
 > - **`ul` `ol`의 차이**  
@@ -115,7 +113,7 @@ _written by [김경식](https://github.com/kyoungsic-dev/)_
 ### 5. button 태그의 기본 type은 무엇이고 input[type="button"]과 차이는 무엇인가?
 
 <details>
-  <summary>✅ 답변 확인</summary>
+  <summary>답변 확인</summary>
   <br />
 
 > `button` 태그의 default type은 submit이다.  
@@ -131,7 +129,7 @@ _written by [김경식](https://github.com/kyoungsic-dev/)_
 ### 6. 취소선을 넣을 때 사용하는 태그는 무엇인가?
 
 <details>
-  <summary>✅ 답변 확인</summary>
+  <summary>답변 확인</summary>
   <br />
 
 > ```html
@@ -143,7 +141,7 @@ _written by [김경식](https://github.com/kyoungsic-dev/)_
 ### 7. 밑줄을 넣을 때 사용하는 태그는 무엇인가?
 
 <details>
-  <summary>✅ 답변 확인</summary>
+  <summary>답변 확인</summary>
   <br />
 
 > ```html
@@ -155,7 +153,7 @@ _written by [김경식](https://github.com/kyoungsic-dev/)_
 ### 8. 오픈그래프(OG)에 대해 설명하시오.
 
 <details>
-  <summary>✅ 답변 확인</summary>
+  <summary>답변 확인</summary>
   <br />
 
 > 오픈그래프(OG, 오픈 그래프 프로토콜)는 HTML 문서의 [meta정보](#2-meta태그에-대해-설명하시오) 쉽게 표시하기 위해서  
@@ -169,7 +167,7 @@ _written by [김경식](https://github.com/kyoungsic-dev/)_
 ### 9. 모바일에서 손가락으로 확대하는 것을 제어하는 방법은 무엇인가?
 
 <details>
-  <summary>✅ 답변 확인</summary>
+  <summary>답변 확인</summary>
   <br />
 
 > `minimum-scale` : 줄일 수 있는 최소 크기를 지정합니다. 0\~10 사이의 값을 가집니다.  
@@ -187,7 +185,7 @@ _written by [김경식](https://github.com/kyoungsic-dev/)_
 ### 10. XML과 XHTML에 대해 설명하시오.
 
 <details>
-  <summary>✅ 답변 확인</summary>
+  <summary>답변 확인</summary>
   <br />
 
 > XML과 XHTML 둘 다 마크업 언어로서 웹 문서 규격을 의미한다.  
@@ -222,7 +220,7 @@ _written by [김경식](https://github.com/kyoungsic-dev/)_
 ### 11. 다국어가 포함된 페이지는 어떤 방식으로 제공하는지에 관하여 설명하시오.
 
 <details>
-  <summary>✅ 답변 확인</summary>
+  <summary>답변 확인</summary>
   <br />
 
 > 정적인 페이지라면 서버에서 언어코드로 HTML의 해당 언어와 대체하여 처리한다.
@@ -232,7 +230,7 @@ _written by [김경식](https://github.com/kyoungsic-dev/)_
 ### 12. data-속성에 대해 설명하시오.
 
 <details>
-  <summary>✅ 답변 확인</summary>
+  <summary>답변 확인</summary>
   <br />
 
 > data- 속성은 사용자 지정 데이터 특성이라는 특성 클래스를 형성함으로서 임의의 데이터를 script로 HTML과 DOM 사이에서 교환할 수 있는 방법이다.
@@ -253,7 +251,7 @@ _written by [김경식](https://github.com/kyoungsic-dev/)_
 ### 13. Cookie와 Session, Web Storage에 대해 설명하시오.
 
 <details>
-  <summary>✅ 답변 확인</summary>
+  <summary>답변 확인</summary>
   <br />
 
 > - Cookie(쿠키)
@@ -287,7 +285,7 @@ _written by [김경식](https://github.com/kyoungsic-dev/)_
 ### 14. 점진적 렌더링(Progressive rendering)에 대해 설명하시오.
 
 <details>
-  <summary>✅ 답변 확인</summary>
+  <summary>답변 확인</summary>
   <br />
 
 > 점진적 렌더링은 서버에서 웹 페이지의 일부를 순차적으로 렌더링하고 전체 페이지가 렌더링 될 때까지 기다리지 않고 부분적으로 클라이언트에 스트리밍 하는 기술이다.  
@@ -302,7 +300,7 @@ _written by [김경식](https://github.com/kyoungsic-dev/)_
 ### 1. CSS 적용 우선순위에 대해 설명하시오.
 
 <details>
-  <summary>✅ 답변 확인</summary>
+  <summary>답변 확인</summary>
   <br />
 
 > 1.  `!important`를 붙인 속성
@@ -317,7 +315,7 @@ _written by [김경식](https://github.com/kyoungsic-dev/)_
 ### 2. CSS 길이 단위에는 어떤 것들이 있는가?
 
 <details>
-  <summary>✅ 답변 확인</summary>
+  <summary>답변 확인</summary>
   <br />
 
 > #### 절대 길이
@@ -351,7 +349,7 @@ _written by [김경식](https://github.com/kyoungsic-dev/)_
 ### 3. CSS로 세모를 만드는 방법은 무엇인가?
 
 <details>
-  <summary>✅ 답변 확인</summary>
+  <summary>답변 확인</summary>
   <br />
 
 > ```css
@@ -370,7 +368,7 @@ _written by [김경식](https://github.com/kyoungsic-dev/)_
 ### 4. CSS Sprite에 대해 설명하시오.
 
 <details>
-  <summary>✅ 답변 확인</summary>
+  <summary>답변 확인</summary>
   <br />
 
 > CSS Sprite란 웹 사이트의 로딩 속도를 빠르게 하기 위한 최적화 기법 중의 하나로  
@@ -390,7 +388,7 @@ _written by [김경식](https://github.com/kyoungsic-dev/)_
 ### 5. CSS flex에 대해 설명하시오.
 
 <details>
-  <summary>✅ 답변 확인</summary>
+  <summary>답변 확인</summary>
   <br />
 
 > 웹 페이지의 레이아웃을 구성할 때 사용되는 CSS속성으로 기존 `inline-block` `float` `position`과  
@@ -403,7 +401,7 @@ _written by [김경식](https://github.com/kyoungsic-dev/)_
 ### 6. CSS 전처리기에는 어떤 것들이 있고 무엇인지 설명하시오.
 
 <details>
-  <summary>✅ 답변 확인</summary>
+  <summary>답변 확인</summary>
   <br />
 
 > CSS를 프로그래밍화하여 사용하는 것으로 CSS를 사용할 때 생기는 문제점과 번거로움을 보완한다.
@@ -415,7 +413,7 @@ _written by [김경식](https://github.com/kyoungsic-dev/)_
 ### 7. 가상요소(Pseudo element) 와 가상클래스(Pseudo class)에 대해 설명하시오.
 
 <details>
-  <summary>✅ 답변 확인</summary>
+  <summary>답변 확인</summary>
   <br />
 
 > - 가상요소란 실제로 존재하지 않는 가상의 요소를 만들어 CSS로 제어하는 것을 말한다.  
@@ -430,7 +428,7 @@ _written by [김경식](https://github.com/kyoungsic-dev/)_
 ### 8. :root 가상 클래스에 대해 설명하시오.
 
 <details>
-  <summary>✅ 답변 확인</summary>
+  <summary>답변 확인</summary>
   <br />
 
 > 문서 트리의 root 요소를 선택한다. html문서의 root 요소는 `<html>` 요소이므로  
@@ -441,7 +439,7 @@ _written by [김경식](https://github.com/kyoungsic-dev/)_
 ### 9. 전역 CSS변수 선언하는 방법은 무엇인가?
 
 <details>
-  <summary>✅ 답변 확인</summary>
+  <summary>답변 확인</summary>
   <br />
 
 > ```css
@@ -461,7 +459,7 @@ _written by [김경식](https://github.com/kyoungsic-dev/)_
 ### 10. CSS Class와 Id의 차이점은 무엇인가?
 
 <details>
-  <summary>✅ 답변 확인</summary>
+  <summary>답변 확인</summary>
   <br />
 
 > - `Class`
@@ -475,7 +473,7 @@ _written by [김경식](https://github.com/kyoungsic-dev/)_
 ### 11. rest.css를 사용하는 이유는 무엇인가?
 
 <details>
-  <summary>✅ 답변 확인</summary>
+  <summary>답변 확인</summary>
   <br />
 
 > reset.css를 사용하는 가장 큰 이유는 크로스브라우징 때문인데 웹 브라우저마다 `margin` 이나 `padding` 등 각기 다른 default 스타일이 지정되어있다. 때문에 해당 값들을 초기화 함으로써 다양한 웹 브라우저에서도 동일한 스타일이 적용될 수 있도록 설정한다.
@@ -485,7 +483,7 @@ _written by [김경식](https://github.com/kyoungsic-dev/)_
 ### 12. float이 어떻게 동작하지 설명하시오.
 
 <details>
-  <summary>✅ 답변 확인</summary>
+  <summary>답변 확인</summary>
   <br />
 
 > `float` 속성은 주로 레이아웃을 구성할 때 블록 레벨요소를 가로 정렬하기 위해 사용되는 기법이다.
@@ -502,7 +500,7 @@ _written by [김경식](https://github.com/kyoungsic-dev/)_
 ### 13. z-index에 대해 설명하시오.
 
 <details>
-  <summary>✅ 답변 확인</summary>
+  <summary>답변 확인</summary>
   <br />
 
 > CSS `z-index` 속성은 위치 지정 요소와 그 자손 또는 하위 요소들의 Z축 순서를 지정한다.  
@@ -513,7 +511,7 @@ _written by [김경식](https://github.com/kyoungsic-dev/)_
 ### 14. 블록 서식 맥락(Block Formatting Context)에 대해 설명하시오.
 
 <details>
-  <summary>✅ 답변 확인</summary>
+  <summary>답변 확인</summary>
   <br />
 
 > BFC는 웹 페이지를 렌더링하는 시각적 CSS의 일부로서 블록 박스의 레이아웃이 발생하는 지점과 floating 요소의 상호작용 범위를 결정하는 범위이다.  
@@ -538,7 +536,7 @@ _written by [김경식](https://github.com/kyoungsic-dev/)_
 ### 15. IR(Image Replacement) 기법이란 무엇이고 어떤 것들이 있는지 설명하시오.
 
 <details>
-  <summary>✅ 답변 확인</summary>
+  <summary>답변 확인</summary>
   <br />
 
 > IR 기법은 이미지를 볼 수 없는 사용자들에게 적절한 대체 텍스트를 제공하는 것으로 이는 [웹 접근성](#1-웹-표준과-웹-접근성에-대해-설명하시오) 준수 뿐만아니라 효과적인 [SEO](#-seosearch-engine-optimize--웹사이트가-검색-결과에-더-잘-보이도록-최적화하는-과정)를 위해 요구되는 기법이다.  
@@ -587,7 +585,7 @@ _written by [김경식](https://github.com/kyoungsic-dev/)_
 ### 16. 시각적으로 보이지 않고 스크린리더에서만 가능하게 하는 방법은 무엇인가?
 
 <details>
-  <summary>✅ 답변 확인</summary>
+  <summary>답변 확인</summary>
   <br />
 
 > - `display: none` 영역이 사라지며 콘텐츠가 보이지 않는다.
@@ -599,7 +597,7 @@ _written by [김경식](https://github.com/kyoungsic-dev/)_
 ### 17. CSS Selector의 동작원리에 대해 설명하시오.
 
 <details>
-  <summary>✅ 답변 확인</summary>
+  <summary>답변 확인</summary>
   <br />
 
 > - 선택자(Selector) 가장 마지막에 있는 선택자를 Key 선택자라고 하는데 스타일 엔진은 이 Key 선택자부터 왼쪽으로 이동하면서 ID, Class, Tag, Universal 규칙에 부합하는 검사하면서 파싱을 진행한다.
@@ -609,7 +607,7 @@ _written by [김경식](https://github.com/kyoungsic-dev/)_
 ### 18. 효율적인 CSS를 작성하기 위한 방법에는 어떤 것들이 있는가?
 
 <details>
-  <summary>✅ 답변 확인</summary>
+  <summary>답변 확인</summary>
   <br />
 
 > - 선택자는 상위 선택자를 포함하여 3개 이상 작성하지 않는다.
@@ -627,7 +625,7 @@ _written by [김경식](https://github.com/kyoungsic-dev/)_
 ### 19. position: absolute 와 transform: translate()의 차이는 무엇인가?
 
 <details>
-  <summary>✅ 답변 확인</summary>
+  <summary>답변 확인</summary>
   <br />
 
 > `position: absolute`와 `transform: translate()`는 비슷해보이나 근본적인 목적이 다르기 때문에 구별하여 사용해야 한다.
@@ -647,7 +645,7 @@ _written by [김경식](https://github.com/kyoungsic-dev/)_
 ### 20. CSS position 속성 값엔 어떤 것들이 있고 차이는 무엇인가?
 
 <details>
-  <summary>✅ 답변 확인</summary>
+  <summary>답변 확인</summary>
   <br />
 
 > - `static` : `position`속성의 기본 값으로 다른 요소와의 관계에 의해 자동으로 배치되며 `top, right, bottom, left` offset 값을 지정할 수 없다.
@@ -661,7 +659,7 @@ _written by [김경식](https://github.com/kyoungsic-dev/)_
 ### 21. Box Model에 관해 설명하고 브라우저에서 어떻게 동작하는지 설명하시오.
 
 <details>
-  <summary>✅ 답변 확인</summary>
+  <summary>답변 확인</summary>
   <br />
 
 > Box Model이란 HTML 요소가 웹 페이지에서 차지하는 공간을 정의한 모델이다.  
@@ -683,7 +681,7 @@ _written by [김경식](https://github.com/kyoungsic-dev/)_
 ### 22. CSS box-sizing: border-box에 대해 설명하시오.
 
 <details>
-  <summary>✅ 답변 확인</summary>
+  <summary>답변 확인</summary>
   <br />
 
 > `box-sizing` 속성의 기본값은 `content-box`이다. `content-box`는 `width, heighht` 속성의 대상이 content 영역임을 의미한다.  
@@ -694,7 +692,7 @@ _written by [김경식](https://github.com/kyoungsic-dev/)_
 ### 23. CSS display 속성 inline과 inline-block의 차이점은 무엇인가?
 
 <details>
-  <summary>✅ 답변 확인</summary>
+  <summary>답변 확인</summary>
   <br />
 
 > - `inline` > `block`과 달리 줄바꿈이 일어나지 않고 content크기 만큼의 `width, height`를 가지고 있다. `width, height` 값을 지정할 수 없다.
@@ -705,7 +703,7 @@ _written by [김경식](https://github.com/kyoungsic-dev/)_
 ### 24. CSS에서 'C’는 Cascading을 의미하는데 Cascading에 관해서 설명하시오.
 
 <details>
-  <summary>✅ 답변 확인</summary>
+  <summary>답변 확인</summary>
   <br />
 
 > Cascading은 '위에서 아래로 상속, 종속하는' 의미이다. 따라서 적용된 여러 스타일 중에서 어떤 스타일로 브라우저에 렌더링 할 지 결정하는 원리로 이해할 수 있다.  
@@ -716,7 +714,7 @@ _written by [김경식](https://github.com/kyoungsic-dev/)_
 ### 25. CSS 방법론이란 무엇이고 어떤 것들이 있는가?
 
 <details>
-  <summary>✅ 답변 확인</summary>
+  <summary>답변 확인</summary>
   <br />
 
 > CSS 방법론이란 프로젝트의 규모가 커지는 만큼 CSS도 그만큼 증가하고 복잡해진다.  
@@ -732,7 +730,7 @@ _written by [김경식](https://github.com/kyoungsic-dev/)_
 ### 1. 호이스팅(Hoisting)에 대해 설명하시오.
 
 <details>
-  <summary>✅ 답변 확인</summary>
+  <summary>답변 확인</summary>
   <br />
 
 > 인터프리터가 변수와 함수의 메모리 공간을 선언 전에 미리 할당하는 것을 의미한다.  
@@ -743,7 +741,7 @@ _written by [김경식](https://github.com/kyoungsic-dev/)_
 ### 2. var, let, const 차이에 대해 설명하시오.
 
 <details>
-  <summary>✅ 답변 확인</summary>
+  <summary>답변 확인</summary>
   <br />
 
 > - `var`는 변수의 선언과 초기화가 동시에 이루어진다. 별도의 값을 할당하지 않을 시 undefined가 할당 된다.  
@@ -761,7 +759,7 @@ _written by [김경식](https://github.com/kyoungsic-dev/)_
 ### 3. Javascript 파일을 로드 할때 defer, async는 각각 무엇인지 설명하시오.
 
 <details>
-  <summary>✅ 답변 확인</summary>
+  <summary>답변 확인</summary>
   <br />
 
 > Javascript는 Parser blocking resource(파서 차단 리소스)이다.  
@@ -786,7 +784,7 @@ _written by [김경식](https://github.com/kyoungsic-dev/)_
 ### 4. AJAX에 대해 설명하시오.
 
 <details>
-  <summary>✅ 답변 확인</summary>
+  <summary>답변 확인</summary>
   <br />
 
 > Asynchronous Javascript And Xml(비동기식 자바스크립트와 xml)의 약자이다.  
@@ -797,7 +795,7 @@ _written by [김경식](https://github.com/kyoungsic-dev/)_
 ### 5. 이벤트 전파방지에 대해 설명하시오.
 
 <details>
-  <summary>✅ 답변 확인</summary>
+  <summary>답변 확인</summary>
   <br />
 
 ```html
@@ -832,7 +830,7 @@ return false;
 ### 6. jQuery attr(), prop()의 차이에 대해 설명하시오.
 
 <details>
-  <summary>✅ 답변 확인</summary>
+  <summary>답변 확인</summary>
   <br />
 
 > `.attr()` 메소드와 `.prop()` 메소드의 차이점을 알기 위해서는 속성(attribute)과 프로퍼티(property)의 차이점을 알아야 한다. 속성(attribute)이란 HTML 요소의 추가적인 정보를 가지고 있는 이름과 값의 한 쌍을 의미한다.  
@@ -846,7 +844,7 @@ return false;
 ### 7. 클로저(Closure)에 대해 설명하시오.
 
 <details>
-  <summary>✅ 답변 확인</summary>
+  <summary>답변 확인</summary>
   <br />
 
 > 함수와 [렉시컬 환경](#-렉시컬-환경lexical-environment--block-function-script를-실행하기-앞서-생성되는-스코프-범위-안에-있는-변수화-함수를-프로퍼티로-저장하는-객체이다)의 조합을 말한다.  
@@ -874,7 +872,7 @@ console.log(add3(1)); // 4
 ### 8. Arrow Function(화살표 함수)를 언제, 왜 사용하는가?
 
 <details>
-  <summary>✅ 답변 확인</summary>
+  <summary>답변 확인</summary>
   <br />
 
 > - 화살표 함수는 함수 본연의 기능을 직관적으로 잘 표현한다.
@@ -895,7 +893,7 @@ console.log(add3(1)); // 4
 ### 9. 이벤트 위임(Event delegation)에 대해 설명하시오.
 
 <details>
-  <summary>✅ 답변 확인</summary>
+  <summary>답변 확인</summary>
   <br />
 
 > 이벤트 위임 기법은 각 요소마다 이벤트 핸들러를 할당하지 않고 요소의 공통 조상에 이벤트 핸들러를 할당하여 여러 요소를 한꺼번에 다룰 수 있다. 공통 조상에 할당한 핸들러에서 `event.target`을 이용하면 어디서 이벤트가 발생했는지 알 수 있는데 이를 이용해 이벤트를 핸들링한다.
@@ -927,7 +925,7 @@ console.log(add3(1)); // 4
 ### 21. JavaScript 표준 내장 객체를 확장하는 것이 좋지 않은 이유는 무엇인가?
 
 <details>
-  <summary>✅ 답변 확인</summary>
+  <summary>답변 확인</summary>
   <br />
 
 > 표준 내장 객체는 Javascript가 기본적으로 가지고 있는 객체들을 의미한다.  
@@ -941,7 +939,7 @@ console.log(add3(1)); // 4
 ### 23. ==와 ===의 차이점은 무엇인가?
 
 <details>
-  <summary>✅ 답변 확인</summary>
+  <summary>답변 확인</summary>
   <br />
 
 > Javascript는 엄격한 비교와 유형변환 비교를 지원한다.
@@ -957,7 +955,7 @@ console.log(add3(1)); // 4
 ### 25. 삼항연산자(Ternary statement)에 대해 설명하시오.
 
 <details>
-  <summary>✅ 답변 확인</summary>
+  <summary>답변 확인</summary>
   <br />
 
 > 삼항연산자는 Javascript에서 세 개의 피연산자를 취할 수 있는 유일한 연산자이다.  
@@ -978,7 +976,7 @@ console.log(add3(1)); // 4
 ### 27. 엄격모드(Strict mode)에 대해 설명하시오.
 
 <details>
-  <summary>✅ 답변 확인</summary>
+  <summary>답변 확인</summary>
   <br />
 
 > 최상위에 `use strict;`를 이용하여 엄격모드를 선언할 수 있다.  
@@ -989,7 +987,7 @@ console.log(add3(1)); // 4
 ### 28. 전역 스코프(Global scope, 전역 변수) 사용했을 때 장/단점은 무엇인가?
 
 <details>
-  <summary>✅ 답변 확인</summary>
+  <summary>답변 확인</summary>
   <br />
 
 > 스코프(Scope)는 어떤 변수에 접근 또는 참조 가능한 범위이다.  
@@ -1005,7 +1003,7 @@ console.log(add3(1)); // 4
 ### 31. 함수선언식과 함수표현식의 차이는 무엇인가?
 
 <details>
-  <summary>✅ 답변 확인</summary>
+  <summary>답변 확인</summary>
   <br />
 
 > - 함수선언식 (선언적 함수)
@@ -1037,7 +1035,7 @@ console.log(add3(1)); // 4
 ### 37. 네임 스페이스란 무엇이고 네임 스페이스 패턴에는 어떤 것들이 있는가?
 
 <details>
-  <summary>✅ 답변 확인</summary>
+  <summary>답변 확인</summary>
   <br />
 
 > 네임 스페이스란 구분이 가능하도록 정해놓은 범위나 영역을 의미한다. 이름 그대로 이름 공간을 선언하여 다른 공간과 구분하도록 하는 것이다.  
@@ -1081,7 +1079,7 @@ console.log(add3(1)); // 4
 ### 1. 웹 표준과 웹 접근성에 대해 설명하시오.
 
 <details>
-  <summary>✅ 답변 확인</summary>
+  <summary>답변 확인</summary>
   <br />
 
 > - 웹 표준이란 다양한 브라우저 환경에서 웹 페이지를 동일하게 출력하기 위해 웹 표준화 단체인 W3C가 권고하는 웹사이트를 작성 규정이다.
@@ -1092,7 +1090,7 @@ console.log(add3(1)); // 4
 ### 2. API에 대해 설명하시오.
 
 <details>
-  <summary>✅ 답변 확인</summary>
+  <summary>답변 확인</summary>
   <br />
 
 > API(Application Programming Interface)는 두 소프트웨어의 구성 요소가 서로 통신할 수 있게 하는 메커니즘이다.
@@ -1103,7 +1101,7 @@ console.log(add3(1)); // 4
 ### 3. CDN에 대해 설명하시오.
 
 <details>
-  <summary>✅ 답변 확인</summary>
+  <summary>답변 확인</summary>
   <br />
 
 > CDN(콘텐츠 전송 네트워크)는 Content Delivery Network의 약자이다.
@@ -1134,7 +1132,7 @@ console.log(add3(1)); // 4
 ### 4. 프레임워크/플러그인/라이브러리의 차이는 무엇인가?
 
 <details>
-  <summary>✅ 답변 확인</summary>
+  <summary>답변 확인</summary>
   <br />
 
 > - 프레임워크는 목적에 따라 효율적으로 구조를 짜놓은 개발 방식을 말한다.
@@ -1155,7 +1153,7 @@ console.log(add3(1)); // 4
 ### 5. 크로스브라우징에 대해 설명하시오.
 
 <details>
-  <summary>✅ 답변 확인</summary>
+  <summary>답변 확인</summary>
   <br />
 
 > 크로스브라우징은 많은 종류의 웹 브라우저에서 웹 사이트가 정상적으로 동작하도록 만드는 방법론 중 하나이다.
@@ -1165,7 +1163,7 @@ console.log(add3(1)); // 4
 ### 6. 반응형 웹과 적응형 웹에 대해 설명하시오.
 
 <details>
-  <summary>✅ 답변 확인</summary>
+  <summary>답변 확인</summary>
   <br />
 
 > - 반응형 웹은 [미디어쿼리](#-미디어쿼리--화면-해상도-기기-방향-등의-조건으로-html-스타일을-전환할-수-있는-css3속성)를 사용하여 하나의 웹 사이트가 다양한 해상도의 사용자 화면에서 유연하게 출력될 수 있도록 작업된 웹 구성 방식이다.
@@ -1178,7 +1176,7 @@ console.log(add3(1)); // 4
 ### 7. npm과 npx에 대해 설명하시오.
 
 <details>
-  <summary>✅ 답변 확인</summary>
+  <summary>답변 확인</summary>
   <br />
 
 > - `npm` (Node Package Manager) 는 [라이브러리](#4-프레임워크플러그인라이브러리의-차이는-무엇인가)) 설치, 업데이트, 삭제 등을 간단한 명령어로 관리할 수 있도록 도와주는 패키지 매니저이다.
@@ -1189,7 +1187,7 @@ console.log(add3(1)); // 4
 ### 8. SSR과 CSR에 대해 설명하시오.
 
 <details>
-  <summary>✅ 답변 확인</summary>
+  <summary>답변 확인</summary>
   <br />
 
 > - SSR
@@ -1205,7 +1203,7 @@ console.log(add3(1)); // 4
 ### 9. SPA(Single Page Application)에 대해 설명허시오.
 
 <details>
-  <summary>✅ 답변 확인</summary>
+  <summary>답변 확인</summary>
   <br />
 
 > 현대에 이르러 웹 사이트가 고도화 됨에 따라 웹 문서의 크기가 커졌고 매번 서버로부터 리소스와 데이터를 렌더링하는 방식이 서버에 부하를 주어 문제가 되었는데 이러한 문제를 해결하기 위해 등장한 것이 SPA이다. SPA는 쉽게 말해 클라이언트에 최초 한 번만 페이지 전체를 로드하고 이후부터는 특정 부문만 비동기 호출을 통해 데이터를 바인딩하는 방식이다.
