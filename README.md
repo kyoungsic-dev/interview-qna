@@ -24,9 +24,9 @@ HTML, CSS, Javascript, 기타 용어 및 기술 파트로 구성되어 있으며
   <summary>답변 확인</summary>
 
 > 웹 브라우저는 [쿼크모드(Quirks mode)](#-쿼크모드quirks-mode--오래된-브라우저의-행동-모방하여-렌더링)와 [표준모드(Standard mode)](#-표준모드standard-mode--w3c-표준에-따라-렌더링) 두 가지 렌더링 모드를 가지고 있다.  
-> `<!DOCTYPE html>` (문서 형식선언)은 브라우저가 문서를 렌더링 할 때 쿼크모드로 바뀌지 않도록 하는 것이 목적이다. 만약 이를 선언하지 않았을 경우 웹 브라우저는 현재 버전의 엄격한 기준으로 과거 버전의 정상적으로 작성된 태그들을 문법 오류로 간주하는 오류가 생기게 된다. 브라우저는 선언된 Doctype에 따라 렌더링할 모드를 선택하게 되는데 이 과정을 Doctype sniffing 또는 Doctype switching이라고 한다. 브라우저가 출력하고자 하는 문서가 최신이라고 판단하면 표준모드로 렌더링을 하게 되고 예전 문서라고 판단 되면 쿼크모드로 렌더링을 하게 되는데 쿼크모드를 사용한다는 것은 오래된 웹페이지들이 최신 버전의 브라우저에서 렌더링 되도록 함에 목적이 있다.
+> `<!DOCTYPE html>` (문서 형식 선언)은 브라우저가 문서를 렌더링 할 때 쿼크모드로 바뀌지 않도록 하는 것이 목적이다. 만약 이를 선언하지 않았을 경우 웹 브라우저는 현재 버전의 엄격한 기준으로 과거 버전의 정상적으로 작성된 태그들을 문법 오류로 간주하는 오류가 생기게 된다. 브라우저는 선언된 Doctype에 따라 렌더링할 모드를 선택하게 되는데 이 과정을 Doctype sniffing 또는 Doctype switching이라고 한다. 브라우저가 출력하고자 하는 문서가 최신이라고 판단하면 표준모드로 렌더링을 하게 되고 예전 문서라고 판단 되면 쿼크모드로 렌더링을 하게 되는데 쿼크모드를 사용한다는 것은 오래된 웹페이지들이 최신 버전의 브라우저에서 렌더링 되도록 함에 목적이 있다.
 >
-> ###### 📝 쿼크모드(Quirks mode) : 오래된 브라우저의 행동 모방하여 렌더링  
+> ###### 📝 쿼크모드(Quirks mode) : 오래된 브라우저의 행동 모방하여 렌더링
 > ###### 📝 표준모드(Standard mode) : W3C 표준에 따라 렌더링
 
 </details>
@@ -182,7 +182,7 @@ HTML, CSS, Javascript, 기타 용어 및 기술 파트로 구성되어 있으며
 > - 기존 HTML 마크업 언어 특징
 >
 >   - HTML User Agent가 오류에 대해서 상당히 관대하다.
->   - 잘못된 태그 사용 또는 중첩되거나 닫히지 않은 태그 등등으로 작성하여도 브라우저는 문제가 있는 부분을 허용하거나 무시된어 사용된다.
+>   - 잘못된 태그 사용 또는 중첩되거나 닫히지 않은 태그 등등으로 작성하여도 브라우저는 문제가 있는 부분을 허용하거나 무시된다.
 >   - Data의 의미 보다는 기술된 태그의 외향적인 표현에 집중되어 있다.
 >   - 정보의 구조화 및 데이터간의 연관성 표현과 유효성 검증이 어렵다.
 >
@@ -202,15 +202,6 @@ HTML, CSS, Javascript, 기타 용어 및 기술 파트로 구성되어 있으며
 >   - 엄격한 규칙을 사용하고 있어 문서가 손상될 가능성이 있다.
 >   - Application/xhtml+xml 또는 text/xml로 제공되는 경우 자동으로 XHTML로 처리된다.  
 >     단, IE 환경에서는 타입을 인지하지 못해 다운로드 처리되면, IE에 한해서만 text/html로 처리해 주는것이 좋다.
-
-</details>
-
-### 다국어가 포함된 페이지는 어떤 방식으로 제공하는지에 관하여 설명하시오.
-
-<details>
-  <summary>답변 확인</summary>
-
-> 정적인 페이지라면 서버에서 언어코드로 HTML의 해당 언어와 대체하여 처리한다.
 
 </details>
 
@@ -261,7 +252,7 @@ HTML, CSS, Javascript, 기타 용어 및 기술 파트로 구성되어 있으며
 >   - 쿠키보다 큰 저장 용량을 지원한다. (모바일 2.5MB/데스크탑 5~10MB)
 >   - 서버가 HTTP 헤더를 통해 스토리지 객체를 조작할 수 없어 보안성이 좋다.
 >
-> ###### 📝 로컬스토리지 : 사용자가 데이터를 지우지 않는 이상 브라우저에 영구적으로 남아있는다.  
+> ###### 📝 로컬스토리지 : 사용자가 데이터를 지우지 않는 이상 브라우저에 영구적으로 남아있는다.
 > ###### 📝 세션스토리지 : 데이터가 Origin뿐만 아니라 브라우저 탭에도 종속되기에 창을 닫을 경우 제거된다.
 
 </details>
@@ -271,8 +262,13 @@ HTML, CSS, Javascript, 기타 용어 및 기술 파트로 구성되어 있으며
 <details>
   <summary>답변 확인</summary>
 
-> 점진적 렌더링은 서버에서 웹 페이지의 일부를 순차적으로 렌더링하고 전체 페이지가 렌더링 될 때까지 기다리지 않고 부분적으로 클라이언트에 스트리밍 하는 기술이다.  
-> 점진적 렌더링을 이해하려면 먼저 [CSR(Client Side Rendering)과 SSR(Server Side Rendering)](#ssrserver-side-rendering과-csrclient-side-rendering에-대해-설명하시오)이 어떻게 작동되는지 알아야한다.
+> 점진적 렌더링(PSSR)은 서버에서 중요한 콘텐츠를 렌더링한 후 중요하지 않은 콘텐츠를 기다리지 않고 클라이언트로 스트리밍하는 기술이다.
+> 1. 클라이언트에서 서버로 HTML을 요청
+> 2. 서버에서 API Request 생성 후 중요한 콘텐츠를 우선 렌더링 후 클라이언트로 스트리밍
+> 3. 클라이언트는 서버에서 내려준 HTML을 chunk 로드 후 렌더링
+> 4. 서버에서 중요하지 않았던 나머지 콘텐츠를 렌더링하고 다시 클라이언트로 스트리밍
+> 5. 클라이언트는 서버에서 중요하지 않았던 나머지 콘텐츠를 받아 렌더링
+> 6. 전체 페이지 로드 완료 후 클라이언트는 일반적으로 이벤트 핸들러 및 기타 상호작용 동작을 연결하는 DOM Element에 대한 상호작용을 수행
 
 </details>
 
@@ -300,7 +296,6 @@ HTML, CSS, Javascript, 기타 용어 및 기술 파트로 구성되어 있으며
   <summary>답변 확인</summary>
 
 > #### 절대 길이
->
 > | 단위 | 이름       | 다음과 동일         |
 > | ---- | ---------- | ------------------- |
 > | cm   | Centimeter | 1cm = 96px/2.54     |
@@ -312,7 +307,6 @@ HTML, CSS, Javascript, 기타 용어 및 기술 파트로 구성되어 있으며
 > | px   | Pixel      | 1px = 1/96 in       |
 >
 > #### 상대 길이
->
 > | 단위 | 다음과 동일                               |
 > | ---- | ----------------------------------------- |
 > | em   | 요소의 글꼴 크기                          |
@@ -322,7 +316,7 @@ HTML, CSS, Javascript, 기타 용어 및 기술 파트로 구성되어 있으며
 > | lh   | 요소의 라인 높이                          |
 > | vw   | viewport 너비의 1%                        |
 > | vh   | viewport 높이의 1%                        |
-> | vmin | viewport wnd 작은 치수의 1%               |
+> | vmin | viewport 중 작은 치수의 1%               |
 > | vmax | viewport 의 큰 치수의 1%                  |
 
 </details>
@@ -350,15 +344,10 @@ HTML, CSS, Javascript, 기타 용어 및 기술 파트로 구성되어 있으며
 <details>
   <summary>답변 확인</summary>
 
-> CSS Sprite란 웹 사이트의 로딩 속도를 빠르게 하기 위한 최적화 기법 중의 하나로  
-> 여러개의 이미지를 하나의 이미지로 합쳐서 관리하는 기술을 의미한다.
->
+> CSS Sprite란 웹 사이트의 로딩 속도를 빠르게 하기 위한 최적화 기법 중의 하나로 여러개의 이미지를 하나의 이미지로 합쳐서 관리하는 기술을 의미한다.  
 > #### ⚙ CSS Sprite의 장점
->
 > - 리소스를 다운로드를 최소화 하여 새롭게 로딩되는 경우에도 이미지 로드 블링킹 현상이 없다.
->
 > #### ⚙ CSS Sprite의 단점
->
 > - 이미지 용량이 크다면 로딩시 매우 오래 걸릴 수 있다.
 > - 사용하고자 하는 이미지의 position을 알아야 하며 이벤트 적용시 번거로움이 있다.
 
@@ -369,10 +358,7 @@ HTML, CSS, Javascript, 기타 용어 및 기술 파트로 구성되어 있으며
 <details>
   <summary>답변 확인</summary>
 
-> 웹 페이지의 레이아웃을 구성할 때 사용되는 CSS속성으로 기존 `inline-block` `float` `position`과  
-> 같은 속성의 문제점과 한계를 보완한 속성이다.  
-> flexible box, flexbox라고도 부르는 flex는 레이아웃 배치 기능에 중점을 두어  
-> 고안되었기 때문에 기존 방식보다 훨씬 수월한 레이아웃 배치 작업이 가능하다.
+> 웹 페이지의 레이아웃을 구성할 때 사용되는 CSS속성으로 기존 `inline-block` `float` `position`과 같은 속성의 문제점과 한계를 보완한 속성이다. flexible box, flexbox라고도 부르는 flex는 레이아웃 배치 기능에 중점을 두어 고안되었기 때문에 기존 방식보다 훨씬 수월한 레이아웃 배치 작업이 가능하다.
 
 </details>
 
@@ -382,7 +368,7 @@ HTML, CSS, Javascript, 기타 용어 및 기술 파트로 구성되어 있으며
   <summary>답변 확인</summary>
 
 > CSS를 프로그래밍화하여 사용하는 것으로 CSS를 사용할 때 생기는 문제점과 번거로움을 보완한다.
-> Mixin, Nesting 등과 같은 기능으로 CSS 구조를 가독성있고 유지보수하기 좋게 한다.  
+> Mixin, Nesting 등과 같은 기능으로 불필요하게 반복되는 작업을 줄여 작업 시간을 단축 할 수 있으며 CSS 문서의 가독성을 높여준다.  
 > Less, Sass, Stylus 등과 같은 전처리기가 있으며 해당 파일을 컴파일하여 CSS포맷으로 변환한다.
 
 </details>
@@ -406,12 +392,11 @@ HTML, CSS, Javascript, 기타 용어 및 기술 파트로 구성되어 있으며
 <details>
   <summary>답변 확인</summary>
 
-> 문서 트리의 root 요소를 선택한다. html문서의 root 요소는 `<html>` 요소이므로  
-> :root의 명시도가 더 높다는 점을 제외하면 html 선택자와 동일하다.
+> 문서 트리의 root 요소를 선택한다. html문서의 root 요소는 `<html>` 요소이므로 `:root`의 명시도가 더 높다는 점을 제외하면 html 선택자와 동일하다.
 
 </details>
 
-### 전역 CSS변수 선언하는 방법은 무엇인가?
+### 전역 CSS변수 선언과 사용법은 무엇인가?
 
 <details>
   <summary>답변 확인</summary>
@@ -430,7 +415,7 @@ HTML, CSS, Javascript, 기타 용어 및 기술 파트로 구성되어 있으며
 
 </details>
 
-### CSS Class와 Id의 차이점은 무엇인가?
+### CSS의 Class와 Id의 차이점은 무엇인가?
 
 <details>
   <summary>답변 확인</summary>
@@ -448,7 +433,7 @@ HTML, CSS, Javascript, 기타 용어 및 기술 파트로 구성되어 있으며
 <details>
   <summary>답변 확인</summary>
 
-> reset.css를 사용하는 가장 큰 이유는 크로스브라우징 때문인데 웹 브라우저마다 `margin` 이나 `padding` 등 각기 다른 default 스타일이 지정되어있다. 때문에 해당 값들을 초기화 함으로써 다양한 웹 브라우저에서도 동일한 스타일이 적용될 수 있도록 설정한다.
+> reset.css를 사용하는 가장 큰 이유는 크로스브라우징 때문이다. 웹 브라우저마다 `margin` 이나 `padding` 등 각기 다른 default 스타일이 지정되어 있기 때문에 해당 값들을 초기화 함으로써 여러 웹 브라우저에서도 동일한 스타일이 적용될 수 있도록 설정한다.
 
 </details>
 
@@ -473,8 +458,7 @@ HTML, CSS, Javascript, 기타 용어 및 기술 파트로 구성되어 있으며
 <details>
   <summary>답변 확인</summary>
 
-> CSS `z-index` 속성은 위치 지정 요소와 그 자손 또는 하위 요소들의 Z축 순서를 지정한다.  
-> 더 큰 `z-index` 값을 가진 요소가 작은 값의 요소 위를 덮는다.
+> CSS `z-index` 속성은 위치 지정 요소와 그 자손 또는 하위 요소들의 Z축 순서를 지정한다. 더 큰 `z-index` 값을 가진 요소가 작은 값의 요소 위를 덮는다.
 
 </details>
 
@@ -483,9 +467,7 @@ HTML, CSS, Javascript, 기타 용어 및 기술 파트로 구성되어 있으며
 <details>
   <summary>답변 확인</summary>
 
-> BFC는 웹 페이지를 렌더링하는 시각적 CSS의 일부로서 블록 박스의 레이아웃이 발생하는 지점과 floating 요소의 상호작용 범위를 결정하는 범위이다.  
-> 쉽게 말해서 block 속성이 재부여되어 다르게 렌더링 되는 현상을 말한다.
->
+> 블록 서식 맥락(BFC)은 웹 페이지를 렌더링하는 시각적 CSS의 일부로서 블록 박스의 레이아웃이 발생하는 지점과 floating 요소의 상호작용 범위를 결정하는 범위이다. 쉽게 말해서 block 속성이 재부여되어 다르게 렌더링 되는 현상을 말한다.
 > - 문서의 root 요소 (`<html>`)
 > - floating 요소 (`float`이 `none`이 아닐 때)
 > - 절대 위치를 지정한 요소 (`position`이 `absolute`, `fixed`)
@@ -513,40 +495,40 @@ HTML, CSS, Javascript, 기타 용어 및 기술 파트로 구성되어 있으며
 > - Phark Method
 >   - 의미 있는 이미지의 대체 텍스트를 제공하는 경우
 >   - 이미지로 대체할 요소에 배경이미지를 설정하고
->     > ```css
->     > .ir_pm {
->     >   display: block;
->     >   overflow: hidden;
->     >   font-size: 0;
->     >   line-height: 0;
->     >   text-indent: -9999px;
->     > }
->     > ```
+>     ```css
+>     .ir_pm {
+>       display: block;
+>       overflow: hidden;
+>       font-size: 0;
+>       line-height: 0;
+>       text-indent: -9999px;
+>     }
+>     ```
 > - WA IR
 >   - 의미있는 이미지의 대체 텍스트로 이미지가 없어도 대체 텍스트를 보여주고자 할 때
 >   - 이미지로 대체 할 엘리먼트에 배경이미지를 설정하고 글자는 span 태그로 감싼 후 z-index:-1을 이용하여 화면에 보이지 않게 처리
->     > ```css
->     > .ir_wa {
->     >   display: block;
->     >   overflow: hidden;
->     >   position: relative;
->     >   z-index: -1;
->     >   width: 100%;
->     >   height: 100%;
->     > }
->     > ```
+>     ```css
+>     .ir_wa {
+>       display: block;
+>       overflow: hidden;
+>       position: relative;
+>       z-index: -1;
+>       width: 100%;
+>       height: 100%;
+>     }
+>     ```
 > - Screen Out
 >   - 대체 텍스트가 아닌 접근성만을 위한 숨김 텍스트를 제공할 때
->     > ```css
->     > .ir_so {
->     >   overflow: hidden;
->     >   position: absolute;
->     >   width: 0;
->     >   height: 0;
->     >   line-height: 0;
->     >   text-indent: -999px;
->     > }
->     > ```
+>     ```css
+>     .ir_so {
+>       overflow: hidden;
+>       position: absolute;
+>       width: 0;
+>       height: 0;
+>       line-height: 0;
+>       text-indent: -999px;
+>     }
+>     ```
 
 </details>
 
@@ -593,7 +575,6 @@ HTML, CSS, Javascript, 기타 용어 및 기술 파트로 구성되어 있으며
   <summary>답변 확인</summary>
 
 > `position: absolute`와 `transform: translate()`는 비슷해보이나 근본적인 목적이 다르기 때문에 구별하여 사용해야 한다.
->
 > - 사용목적
 >   - `position: absolute`는 특정 위치에 가져다 놓는 포지셔닝에 특화되어 있다.
 >   - `transform: translate()`는 애니메이션에 목적을 두고 있다.
@@ -625,10 +606,8 @@ HTML, CSS, Javascript, 기타 용어 및 기술 파트로 구성되어 있으며
   <summary>답변 확인</summary>
 
 > Box Model이란 HTML 요소가 웹 페이지에서 차지하는 공간을 정의한 모델이다.  
-> 각 HTML 요소들은 자신만의 영역을 가지며 다시 여러개의 작은 영역으로 나뉜다.
->
+> 각 HTML 요소들은 자신만의 영역을 가지며 다시 여러개의 작은 영역으로 나뉜다.  
 > ![Box Model](images/box_model.png)
->
 > - Content 영역
 >   콘텐츠 경계가 감싼 영역으로 글이나 이미지, 비디오 등 요소의 실제 내용을 포함하는 영역으로 `width, height` 속성을 갖는다.
 > - Padding 영역
