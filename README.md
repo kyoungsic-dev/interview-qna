@@ -1417,7 +1417,7 @@ console.log(add3(1)); // 4
 > 4. 서버는 Response 메시지를 생성하여 다시 브라우저에게 데이터를 전송한다.
 > 5. 브라우저는 Response를 받아 파싱하여 화면에 렌더링한다.
 >
-> ###### 📝 DNS(Domain Name System) : 사람이 읽을 수 있는 도메인 이름(ex. www.naver.com)을 머신이 읽을 수 있는 IP주소로 변환
+> ###### 📝 DNS(Domain Name System) : 사람이 읽을 수 있는 도메인 이름을 머신이 읽을 수 있는 IP주소로 변환
 
 </details>
 
